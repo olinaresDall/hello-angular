@@ -35,10 +35,16 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 docker build -t hello-angular . -f ./docker/Dockerfile
 ```
 
-## 2 - Run
+## 2 - Run - Linux
 
 ```shell 
 docker run --rm -it --name hello-angular -v ${PWD}:/app -p 4200:4200 hello-angular
+```
+
+## 2 - Run - Windows
+
+```shell 
+docker run --rm -it --name hello-angular -v 'Path absoluto':/app -p 4200:4200 hello-angular
 ```
 
 ### Dentro del contenedor correr npm install por primera vez
